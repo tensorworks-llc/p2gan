@@ -6,7 +6,7 @@ GanttProject files from various sources including markdown plans,
 code repositories, and structured project definitions.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Tensorworks LLC"
 __package__ = "p2gan"
 
@@ -18,6 +18,9 @@ from .models import (
 from .parser import MarkdownParser, ProjectAnalyzer
 from .generator import GanttGenerator
 from .stakeholders import StakeholderManager
+from .project_history import ProjectHistoryAnalyzer
+from .date_histogram import DateHistogram
+from .project_stats import ProjectStats
 
 __all__ = [
     'Project',
@@ -34,5 +37,8 @@ __all__ = [
     'MarkdownParser',
     'ProjectAnalyzer',
     'GanttGenerator',
-    'StakeholderManager'
+    'StakeholderManager',
+    'ProjectHistoryAnalyzer',
+    'DateHistogram',
+    'ProjectStats'
 ]

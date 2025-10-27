@@ -183,6 +183,26 @@ Full documentation is available at [https://p2gan.readthedocs.io](https://p2gan.
 - **Documentation to Timeline** - Transform markdown roadmaps to visual schedules
 - **CI/CD Integration** - Generate project reports in automated pipelines
 - **Template-Based Planning** - Maintain reusable project templates
+- **AI-Assisted Project Analysis** - Enable AI agents to analyze codebases and generate timelines
+
+## AI Integration
+
+p2gan is specifically designed to work with AI coding assistants like Claude Code, GitHub Copilot, and other LLM-based tools.
+
+### Using p2gan with AI Agents
+
+See [AI_PROMPT_EXAMPLE.md](AI_PROMPT_EXAMPLE.md) for comprehensive prompts to:
+- Analyze any project (code, documentation, PDFs)
+- Extract tasks from multiple sources
+- Generate timeline based on git history and file dates
+- Create preliminary .gan files for project planning
+
+### Quick Start with AI
+```
+"Analyze this project and create a Gantt chart using p2gan.
+Check git history, documentation, and code structure to build
+a comprehensive timeline."
+```
 
 ## Roadmap
 
@@ -210,6 +230,6 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Support
 
-- **Issues:** [GitHub Issues](https://github.com/ecphoria/p2gan/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/ecphoria/p2gan/discussions)
+- **Issues:** [GitHub Issues](https://github.com/tensorworks-llc/p2gan/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/tensorworks-llc/p2gan/discussions)
 - **Documentation:** [Read the Docs](https://p2gan.readthedocs.io)
