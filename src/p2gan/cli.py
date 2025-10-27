@@ -20,17 +20,17 @@ def main():
         epilog="""
 Examples:
   # Convert markdown to GanttProject
-  ganttproject-python convert project.md project.gan
+  p2gan convert project.md project.gan
 
   # Analyze Python package
-  ganttproject-python analyze /path/to/package --output package.gan
+  p2gan analyze /path/to/package --output package.gan
 
   # Auto-detect project type
-  ganttproject-python auto /path/to/project project.gan
+  p2gan auto /path/to/project project.gan
 
   # Manage stakeholders
-  ganttproject-python stakeholders add "John Doe" "Developer" --email john@example.com
-  ganttproject-python stakeholders list
+  p2gan stakeholders add "John Doe" "Developer" --email john@example.com
+  p2gan stakeholders list
         """
     )
     
