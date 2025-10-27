@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "p2gan"
-version = "0.1.0"
+version = "0.1.1"
 description = "Project to Gantt - Convert markdown project plans to GanttProject files"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -71,11 +71,11 @@ p2gan-convert = "p2gan.cli:convert_command"
 p2gan-analyze = "p2gan.analyzer:main"
 
 [project.urls]
-Homepage = "https://github.com/ecphoria/p2gan"
+Homepage = "https://github.com/tensorworks-llc/p2gan"
 Documentation = "https://p2gan.readthedocs.io"
-Repository = "https://github.com/ecphoria/p2gan"
-Issues = "https://github.com/ecphoria/p2gan/issues"
-Changelog = "https://github.com/ecphoria/p2gan/blob/main/CHANGELOG.md"
+Repository = "https://github.com/tensorworks-llc/p2gan"
+Issues = "https://github.com/tensorworks-llc/p2gan/issues"
+Changelog = "https://github.com/tensorworks-llc/p2gan/blob/main/CHANGELOG.md"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
