@@ -200,3 +200,7 @@ dist/
 build/
 *.egg-info/
 src/*.egg-info/
+
+# Backup files
+backup_git.sh
+.git_backups/

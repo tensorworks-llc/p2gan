@@ -36,7 +36,7 @@ p2gan convert project.md output.gan
 ### Python API Usage
 
 ```python
-from ganttproject import Project, Task, Resource, GanttGenerator
+from p2gan import Project, Task, Resource, GanttGenerator
 from datetime import datetime
 
 # Create a project
@@ -140,7 +140,7 @@ p2gan convert samples/dhg_ecosystem_project.md ecosystem.gan
 
 ```bash
 # Clone the repository
-git clone https://github.com/ecphoria/p2gan
+git clone https://github.com/tensorworks-llc/p2gan
 cd p2gan
 
 # Install in development mode

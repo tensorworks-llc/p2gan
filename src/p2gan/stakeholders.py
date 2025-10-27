@@ -47,7 +47,7 @@ class Stakeholder:
 class StakeholderManager:
     """Manages a cache of stakeholders across projects"""
     
-    DEFAULT_CACHE_PATH = Path.home() / '.ganttproject_python' / 'stakeholders.json'
+    DEFAULT_CACHE_PATH = Path.home() / '.p2gan' / 'stakeholders.json'
     
     def __init__(self, cache_path: Optional[Path] = None):
         """Initialize stakeholder manager with optional custom cache path"""
