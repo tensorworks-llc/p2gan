@@ -1,0 +1,58 @@
+# CI - Continuous Integration
+# This runs on EVERY push to test your code
+
+name: CI Tests
+
+# When does this run?
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Test Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+    # Step 1: Check out your code
+    - uses: actions/checkout@v4
+
+    # Step 2: Set up Python
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    # Step 3: Install dependencies
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -e .[test]
+
+    # Step 4: Run linting
+    - name: Lint with flake8
+      run: |
+        pip install flake8
+        # Stop if there are Python syntax errors or undefined names
+        flake8 ganttproject/ --count --select=E9,F63,F7,F82 --show-source --statistics
+        # Exit-zero treats all errors as warnings
+        flake8 ganttproject/ --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    # Step 5: Run tests
+    - name: Test with pytest
+      run: |
+        pytest tests/ -v --cov=ganttproject --cov-report=xml --cov-report=term
+
+    # Step 6: Upload coverage to Codecov (optional)
+    - name: Upload coverage reports
+      uses: codecov/codecov-action@v3
+      if: matrix.python-version == '3.11'
+      with:
+        file: ./coverage.xml
+        fail_ci_if_error: false

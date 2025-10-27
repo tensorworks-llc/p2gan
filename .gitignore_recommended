@@ -1,0 +1,93 @@
+# SECURITY: Files that should NEVER go to Git/GitHub
+# Keep these in SVN only!
+
+# Chat logs and notes (may contain PII)
+docs/notes/
+**/chat_*.md
+**/transcript_*.md
+**/*_conversation.md
+**/*_chat_*.md
+
+# Personal/Private files
+*_PRIVATE*
+*_SECRET*
+*.private
+*.secret
+.env
+.env.local
+
+# API Keys and Credentials
+**/API_KEYS*
+**/credentials*
+**/*_keys.txt
+**/*_token*
+
+# Personal information
+**/personal_*
+**/PII_*
+**/private_*
+
+# Backup files that might contain sensitive data
+*.bak
+*.backup
+*.old
+*.orig
+
+# System files
+.svn/
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
