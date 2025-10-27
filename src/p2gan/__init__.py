@@ -6,7 +6,7 @@ GanttProject files from various sources including markdown plans,
 code repositories, and structured project definitions.
 """
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 __author__ = "Tensorworks LLC"
 __package__ = "p2gan"
 

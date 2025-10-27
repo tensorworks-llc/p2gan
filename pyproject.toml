@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "p2gan"
-version = "0.1.1"
+version = "0.1.2"
 description = "Project to Gantt - Convert markdown project plans to GanttProject files"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MIT"}
+license = "MIT"
 authors = [
     {name = "Tensorworks LLC"},
 ]
