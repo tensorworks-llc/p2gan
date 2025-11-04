@@ -204,3 +204,7 @@ src/*.egg-info/
 # Backup files
 backup_git.sh
 .git_backups/
+
+# Project planning
+KANBAN.md
+

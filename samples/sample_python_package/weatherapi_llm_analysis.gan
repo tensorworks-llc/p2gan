@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="WeatherAPI Client Library" company="Weather Team" webLink="" view-date="2024-07-14" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="3.3.3311" locale="en_US">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="171" order="0"/>
+        <field id="tpd4" name="Begin date" width="64" order="1"/>
+        <field id="tpd5" name="End date" width="64" order="2"/>
+        <option id="taskLabelUp" value="id"/>
+        <option id="taskLabelDown" value="name"/>
+        <option id="taskLabelLeft" value="advancement"/>
+        <option id="taskLabelRight" value="coordinator"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" uid="a133927cfb3a44958102610af12a048b" name="Phase 2: Core Development" meeting="false" start="2024-09-02" duration="14" complete="100" priority="4" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="0" uid="ec8b7906f2614d058ce676521ec0fa20" name="Phase 1: Project Setup" meeting="false" start="2024-09-01" duration="1" complete="100" priority="4" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" uid="f3cd31b335e248429f5bad922a84714b" name="v0.1.0 Release" meeting="true" start="2024-09-15" duration="0" complete="0" expand="true"/>
+        <task id="7" uid="91031a032ef445e6bf35c13970263a83" name="v0.2.0 Release" meeting="true" start="2024-10-01" duration="0" complete="0" expand="true"/>
+        <task id="2" uid="d1d4dd5424de4a6792ff724d8a60baef" name="Phase 3: Advanced Features" meeting="false" start="2024-09-16" duration="16" complete="75" priority="2" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" uid="600fbc515fea4b3fa7f94e4ae190e3c5" name="Phase 4: Testing &amp; QA" meeting="false" start="2024-09-16" duration="10" complete="60" priority="2" expand="true"/>
+        <task id="4" uid="1a7ba646b47949fbaf26222e100f65fe" name="Phase 5: Documentation" meeting="false" start="2024-09-16" duration="10" complete="70" expand="true"/>
+        <task id="5" uid="40063f58c2764b488ac41acec588715a" name="Phase 6: Future Enhancements (PLANNED)" meeting="false" start="2024-10-02" duration="40" complete="0" expand="true">
+            <notes><![CDATA[Based on 20+ TODO comments in code]]></notes>
+        </task>
+        <task id="8" uid="cf403be699a54c2eb0b703a4457451c3" name="v0.3.0 Planned" meeting="true" start="2024-11-24" duration="0" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Alice Developer" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Bob Engineer" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Carol QA" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
